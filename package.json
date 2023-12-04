@@ -1,6 +1,8 @@
 {
   "name": "bechstein-design-system",
   "version": "1.0.0",
+  "author": "C. Bechstein Digital GmbH",
+  "license": "Apache-2.0",
   "scripts": {
     "generate-styles": "node generate-styles.ts"
   },

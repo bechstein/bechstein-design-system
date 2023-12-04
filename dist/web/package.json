@@ -2,10 +2,12 @@
   "name": "@cbechstein-digital/bechstein-design-system",
   "version": "0.0.4",
   "author": "C. Bechstein Digital GmbH",
+  "description": "C. Bechstein Design System",
   "keywords": [
-    "C. Bechstein"
+    "C. Bechstein",
+    "design system"
   ],
-  "license": "MIT",
+  "license": "Apache-2.0",
   "files": [
     "ts/*",
     "themes/*"
