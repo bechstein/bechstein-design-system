@@ -1,0 +1,24 @@
+{
+  "base": {
+    "color": {
+      "selectable": {
+        "primary": {
+          "bg": {
+            "value": "{core.color.grey.grey-700}",
+            "type": "color"
+          },
+          "fr": {
+            "value": "{core.color.grey.grey-300}",
+            "type": "color"
+          }
+        }
+      }
+    },
+    "border-radius": {
+      "scale": {
+        "value": "1",
+        "type": "borderRadius"
+      }
+    }
+  }
+}

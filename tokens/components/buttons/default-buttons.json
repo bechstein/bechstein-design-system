@@ -1,0 +1,178 @@
+{
+  "comp": {
+    "button": {
+      "color": {
+        "primary": {
+          "bg-default": {
+            "value": "{base.color.selectable.primary.bg}",
+            "type": "color"
+          },
+          "bg-hover": {
+            "value": "{comp.button.color.primary.bg-default}",
+            "type": "color",
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "lighten",
+                  "value": "0.1",
+                  "space": "lch"
+                }
+              }
+            }
+          },
+          "bg-pressed": {
+            "value": "{comp.button.color.primary.bg-default}",
+            "type": "color",
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.1",
+                  "space": "lch"
+                }
+              }
+            }
+          },
+          "fg-default": {
+            "value": "{base.color.selectable.primary.fg}",
+            "type": "color"
+          },
+          "border-default": {
+            "value": "{base.color.selectable.primary.bg}",
+            "type": "color"
+          }
+        },
+        "secondary": {
+          "bg-default": {
+            "value": "{base.color.selectable.secondary.bg}",
+            "type": "color"
+          },
+          "bg-hover": {
+            "value": "{comp.button.color.secondary.bg-default}",
+            "type": "color",
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "lighten",
+                  "value": "0.1",
+                  "space": "lch"
+                }
+              }
+            }
+          },
+          "bg-pressed": {
+            "value": "{base.color.selectable.secondary.bg}",
+            "type": "color",
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.1",
+                  "space": "lch"
+                }
+              }
+            }
+          },
+          "fg-default": {
+            "value": "{base.color.selectable.secondary.fg}",
+            "type": "color"
+          },
+          "border-default": {
+            "value": "{base.color.selectable.secondary.bg}",
+            "type": "color"
+          }
+        },
+        "tertiary": {
+          "bg-default": {
+            "value": "{base.color.selectable.tertiary.bg}",
+            "type": "color"
+          },
+          "fg-default": {
+            "value": "{base.color.selectable.tertiary.fg}",
+            "type": "color"
+          },
+          "fg-hover": {
+            "value": "{comp.button.color.tertiary.fg-default}",
+            "type": "color",
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "lighten",
+                  "value": "0.1",
+                  "space": "lch"
+                }
+              }
+            }
+          },
+          "fg-pressed": {
+            "value": "{comp.button.color.clear.fg-default}",
+            "type": "color",
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.1",
+                  "space": "lch"
+                }
+              }
+            }
+          },
+          "border-default": {
+            "value": "{base.color.selectable.tertiary.fg}",
+            "type": "color"
+          }
+        },
+        "clear": {
+          "bg-default": {
+            "value": "{base.color.selectable.clear.bg}",
+            "type": "color"
+          },
+          "fg-default": {
+            "value": "{base.color.selectable.clear.fg}",
+            "type": "color"
+          },
+          "fg-hover": {
+            "value": "{comp.button.color.clear.fg-default}",
+            "type": "color",
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "lighten",
+                  "value": "0.1",
+                  "space": "lch"
+                }
+              }
+            }
+          },
+          "fg-pressed": {
+            "value": "{comp.button.color.clear.fg-default}",
+            "type": "color",
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.1",
+                  "space": "lch"
+                }
+              }
+            }
+          },
+          "border-default": {
+            "value": "{base.color.selectable.clear.bg}",
+            "type": "color"
+          }
+        }
+      },
+      "opacity": {
+        "enabled": {
+          "value": "{base.opacity.selectable.100}",
+          "type": "opacity"
+        },
+        "disabled": {
+          "value": "{base.opacity.selectable.50}",
+          "type": "opacity"
+        }
+      }
+    }
+  }
+}

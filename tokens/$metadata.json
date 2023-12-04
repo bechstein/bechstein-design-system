@@ -1,0 +1,8 @@
+{
+  "tokenSetOrder": [
+    "primitives",
+    "semantics",
+    "themes/cb-apps",
+    "components/buttons/default-buttons"
+  ]
+}

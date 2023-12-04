@@ -1,0 +1,23 @@
+[
+  {
+    "id": "b0d5f3ed1a67205211f950790d7127cdf36df948",
+    "name": "C.Bechstein",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "primitives": "source",
+      "semantics": "enabled",
+      "themes/cb-apps": "enabled",
+      "components/buttons/default-buttons": "enabled"
+    }
+  },
+  {
+    "id": "2254a7f67087e20f9da483d51418ec66a7d1424b",
+    "name": "Default",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "primitives": "source",
+      "semantics": "enabled",
+      "components/buttons/default-buttons": "enabled"
+    }
+  }
+]
