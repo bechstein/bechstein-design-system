@@ -36,7 +36,10 @@ jobs:
         if: ${{ env.MINOR == 'true' }}
       - run: npm version major
         if: ${{ env.MAJOR == 'true' }}
-      - run: cat package.json
+      - run: |
+          cat package.json
+          git config user.name 
+          git config user.email
 
 
   publish-gpr:
