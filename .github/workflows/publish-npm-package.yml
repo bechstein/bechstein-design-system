@@ -32,16 +32,17 @@ jobs:
           node-version: '18.x'
       - run: npm version patch
         if: ${{ env.PATCH == 'true' }}
-      - run: cat package.json
       - run: npm version minor
         if: ${{ env.MINOR == 'true' }}
-      - run: cat package.json
       - run: npm version major
         if: ${{ env.MAJOR == 'true' }}
       - run: |
-          cat package.json
           git config --global user.name "${GITHUB_ACTOR_ID}" 
           git config user.email "${GITHUB_ACTOR_ID}@users.noreply.github.com"
+      - run: |
+          VERSION=$(node -p "require('./package.json').version")
+          git commit -m "[skip ci] increased package version to ${VERSION}"
+      - run: git push
 
 
   publish-gpr:
@@ -58,7 +59,6 @@ jobs:
         with:
           node-version: '18.x'
       - run: npm ci
-      - run: ls -la
       - run: npm run generate-styles
       - run: |
           echo "//npm.pkg.github.com/:_authToken=$NODE_AUTH_TOKEN" > .npmrc
