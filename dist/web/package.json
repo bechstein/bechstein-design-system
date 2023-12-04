@@ -2,6 +2,7 @@
   "name": "@cbechstein-digital/bechstein-design-system",
   "version": "0.0.2",
   "author": "C. Bechstein Digital GmbH",
+  "keywords": ["C. Bechstein"],
   "license": "MIT",
   "files": [
     "ts/*",
