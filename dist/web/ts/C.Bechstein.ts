@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 04 Dec 2023 10:40:56 GMT
+ * Generated on Mon, 04 Dec 2023 15:42:13 GMT
  */
 
 export const coreColorGreyGrey50 = "#fafafaff";
