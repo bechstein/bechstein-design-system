@@ -20,24 +20,18 @@ jobs:
     permissions:
       packages: write
       contents: read
-    defaults:
-      run:
-        working-directory: dist/web
+    env:
+      NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with:
-          node-version: '18.x'
-          registry-url: 'https://npm.pkg.github.com'
-          scope: '@cbechstein-digital'
-      - run: |
-          cd ../..
-          npm ci
+      - run: npm ci
       - run: ls -la
-      - run: cat .npmrc
+      - run: npm run generate-styles
       - run: |
-          cd ../..
-          npm run generate-styles
+          echo "//npm.pkg.github.com/:_authToken=$NODE_AUTH_TOKEN" > .npmrc
+          echo '@cbechstein-digital:registry=https://npm.pkg.github.com' >> .npmrc
+          echo 'always-auth=true' >> .npmrc
+        working-directory: dist/web
       - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        working-directory: dist/web
