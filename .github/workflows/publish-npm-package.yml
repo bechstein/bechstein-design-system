@@ -31,11 +31,11 @@ jobs:
         with:
           node-version: '18.x'
       - run: npm version patch
-        if: ${{ env.$PATCH == 'true' }}
+        if: ${{ env.PATCH == 'true' }}
       - run: npm version minor
-        if: ${{ env.$MINOR == 'true' }}
+        if: ${{ env.MINOR == 'true' }}
       - run: npm version major
-        if: ${{ $MAJOR == 'true' }}
+        if: ${{ env.MAJOR == 'true' }}
       - run: cat package.json
 
 
