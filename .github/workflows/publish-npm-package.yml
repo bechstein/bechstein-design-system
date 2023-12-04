@@ -14,8 +14,33 @@ jobs:
           node-version: '18.x'
       - run: npm ci
 
-  publish-gpr:
+  version-increase:
     needs: install-dependencies
+    runs-on: ubuntu-latest
+    if: contains(github.event.head_commit.message, '[patch]') || contains(github.event.head_commit.message, '[minor]') || contains(github.event.head_commit.message, '[major]')
+    env:
+      PATCH: contains(github.event.head_commit.message, '[patch]')
+      MINOR: contains(github.event.head_commit.message, '[minor]')
+      MAJOR: contains(github.event.head_commit.message, '[major]')
+    defaults:
+      run:
+        working-directory: dist/web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '18.x'
+      - run: npm version patch
+        if: $PATCH == true
+      - run: npm version minor
+        if: $MINOR == true
+      - run: npm version major
+        if: $MAJOR == true
+      - run: cat package.json
+
+
+  publish-gpr:
+    needs: version-increase
     runs-on: ubuntu-latest
     permissions:
       packages: write
@@ -25,6 +50,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
+        with:
+          node-version: '18.x'
       - run: npm ci
       - run: ls -la
       - run: npm run generate-styles
