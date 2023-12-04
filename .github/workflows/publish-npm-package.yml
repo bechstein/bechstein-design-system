@@ -3,7 +3,7 @@ name: Publish package to GitHub package registry
 on:
   push:
     branches:
-      - package
+      - main
 jobs:
   install-dependencies:
     runs-on: ubuntu-latest
