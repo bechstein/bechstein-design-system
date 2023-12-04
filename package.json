@@ -1,0 +1,14 @@
+{
+  "name": "bechstein-design-system",
+  "version": "1.0.0",
+  "scripts": {
+    "generate-styles": "node generate-styles.ts"
+  },
+  "dependencies": {
+    "@tokens-studio/sd-transforms": "^0.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.1",
+    "style-dictionary": "^3.9.0"
+  }
+}

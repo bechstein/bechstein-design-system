@@ -1,5 +1,12 @@
+# project dependencies
 node_modules
+
+# IDE
 .idea
-output.json
-build/themes
-build/ts
+
+# dist files
+dist/web/*/*.ts
+dist/web/*/*.scss
+
+# config files
+.npmrc

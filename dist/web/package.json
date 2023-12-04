@@ -1,0 +1,10 @@
+{
+  "name": "@cbechstein-digital/bechstein-design-system",
+  "version": "0.0.0",
+  "author": "C. Bechstein Digital GmbH",
+  "license": "MIT",
+  "files": [
+    "ts/*",
+    "themes/*"
+  ]
+}
