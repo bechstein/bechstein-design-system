@@ -32,14 +32,16 @@ jobs:
           node-version: '18.x'
       - run: npm version patch
         if: ${{ env.PATCH == 'true' }}
+      - run: cat package.json
       - run: npm version minor
         if: ${{ env.MINOR == 'true' }}
+      - run: cat package.json
       - run: npm version major
         if: ${{ env.MAJOR == 'true' }}
       - run: |
           cat package.json
-          git config user.name 
-          git config user.email
+          git config --global user.name "${GITHUB_ACTOR_ID}" 
+          git config user.email "${GITHUB_ACTOR_ID}@users.noreply.github.com"
 
 
   publish-gpr:
