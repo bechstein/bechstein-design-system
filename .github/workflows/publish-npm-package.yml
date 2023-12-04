@@ -14,8 +14,26 @@ jobs:
           node-version: '18.x'
       - run: npm ci
 
-  version-increase:
+  generate-styles:
     needs: install-dependencies
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '18.x'
+      - run: npm ci
+      - run: npm run generate-styles
+      - run: |
+          git config --global user.name "${GITHUB_ACTOR_ID}" 
+          git config user.email "${GITHUB_ACTOR_ID}@users.noreply.github.com"
+      - run: git add .
+        working-directory: dist/web
+      - run: git commit -m "[skip ci] generated styles from design tokens"
+      - run: git push
+
+  version-increase:
+    needs: generate-styles
     runs-on: ubuntu-latest
     if: contains(github.event.head_commit.message, '[patch]') || contains(github.event.head_commit.message, '[minor]') || contains(github.event.head_commit.message, '[major]')
     env:
@@ -30,6 +48,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '18.x'
+      - run: git pull
       - run: npm version patch
         if: ${{ env.PATCH == 'true' }}
       - run: npm version minor
@@ -45,7 +64,6 @@ jobs:
           git commit -m "[skip ci] increased package version to ${VERSION}"
       - run: git push
 
-
   publish-gpr:
     needs: version-increase
     runs-on: ubuntu-latest
@@ -56,12 +74,7 @@ jobs:
       NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '18.x'
       - run: git pull
-      - run: npm ci
-      - run: npm run generate-styles
       - run: |
           echo "//npm.pkg.github.com/:_authToken=$NODE_AUTH_TOKEN" > .npmrc
           echo '@cbechstein-digital:registry=https://npm.pkg.github.com' >> .npmrc

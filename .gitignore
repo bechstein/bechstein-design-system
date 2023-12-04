@@ -4,9 +4,5 @@ node_modules
 # IDE
 .idea
 
-# dist files
-dist/web/*/*.ts
-dist/web/*/*.scss
-
 # config files
 .npmrc
