@@ -1,0 +1,35 @@
+name: Publish NPM package to GitHub package registry
+
+on:
+  push:
+    branches:
+      - package
+jobs:
+  install-dependencies:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: npm ci
+
+  publish-gpr:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+      - run: ls -la
+        working-directory: build
+      - run: cat .npmrc
+        working-directory: build
+      - run: npm ci
+      - run: npm run generate
+      - run: npm publish
+        working-directory: build
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
