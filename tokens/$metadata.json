@@ -3,6 +3,8 @@
     "primitives",
     "semantics",
     "themes/cb-apps",
-    "components/buttons/default-buttons"
+    "components/buttons/default-buttons",
+    "language/en",
+    "language/de"
   ]
 }

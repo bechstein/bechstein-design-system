@@ -46,7 +46,7 @@
     },
     "font-family": {
       "interface": {
-        "value": "SF Pro Display",
+        "value": "SF Pro",
         "type": "fontFamilies"
       }
     },
@@ -241,6 +241,10 @@
           },
           "lg": {
             "value": "{core.dimension.150}",
+            "type": "spacing"
+          },
+          "xl": {
+            "value": "{core.dimension.200}",
             "type": "spacing"
           }
         },

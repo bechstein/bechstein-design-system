@@ -7,7 +7,9 @@
       "primitives": "source",
       "semantics": "enabled",
       "themes/cb-apps": "enabled",
-      "components/buttons/default-buttons": "enabled"
+      "components/buttons/default-buttons": "enabled",
+      "language/en": "disabled",
+      "language/de": "disabled"
     }
   },
   {
@@ -17,7 +19,33 @@
     "selectedTokenSets": {
       "primitives": "source",
       "semantics": "enabled",
-      "components/buttons/default-buttons": "enabled"
+      "components/buttons/default-buttons": "enabled",
+      "language/en": "disabled",
+      "language/de": "disabled"
     }
+  },
+  {
+    "id": "4e4324a8571ac0950bb14e9f9084974ff4829885",
+    "name": "de",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "primitives": "source",
+      "semantics": "enabled",
+      "components/buttons/default-buttons": "enabled",
+      "language/de": "enabled"
+    },
+    "group": "Language"
+  },
+  {
+    "id": "407a5f3f3e39808c2586c8481b649df0d2da74be",
+    "name": "en",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "primitives": "source",
+      "semantics": "enabled",
+      "components/buttons/default-buttons": "enabled",
+      "language/en": "enabled"
+    },
+    "group": "Language"
   }
 ]
