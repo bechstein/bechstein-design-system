@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 05 Dec 2023 07:58:57 GMT
+ * Generated on Tue, 05 Dec 2023 15:43:29 GMT
  */
 
 export const coreColorGreyGrey50 = "#fafafaff";
@@ -157,7 +157,7 @@ export const baseColorSelectableSecondaryBg = "#06a6f1ff";
 export const baseColorSelectableSecondaryFg = "#ffffffff";
 export const baseColorSelectableClearBg = "rgba(0,0,0,0)";
 export const baseColorSelectableClearFg = "#3880ffff";
-export const baseFontFamilyInterface = "'SF Pro Display'";
+export const baseFontFamilyInterface = "'SF Pro'";
 export const baseLineHeightInterface = 1.1;
 export const baseFontSizeXxs = "10px";
 export const baseFontSizeXs = "13px";
@@ -169,10 +169,10 @@ export const baseFontWeightInterfaceDefault = "400";
 export const baseFontWeightInterfaceSemibold = "600";
 export const baseFontWeightInterfaceStrong = "700";
 export const baseParagraphSpacingInterface = "0.25";
-export const baseTypographyInterfaceExtrasmall = "400 10px/1.1 'SF Pro Display'";
-export const baseTypographyInterfaceSmall = "600 13px/1.1 'SF Pro Display'";
-export const baseTypographyInterfaceMedium = "400 16px/1.1 'SF Pro Display'";
-export const baseTypographyInterfaceLarge = "400 18px/1.1 'SF Pro Display'";
+export const baseTypographyInterfaceExtrasmall = "400 10px/1.1 'SF Pro'";
+export const baseTypographyInterfaceSmall = "600 13px/1.1 'SF Pro'";
+export const baseTypographyInterfaceMedium = "400 16px/1.1 'SF Pro'";
+export const baseTypographyInterfaceLarge = "400 18px/1.1 'SF Pro'";
 export const baseBorderRadiusScale = "1px";
 export const baseBorderRadiusContainerNone = "0px";
 export const baseBorderRadiusContainerSm = "4px";
@@ -194,6 +194,7 @@ export const baseSpaceSelectableInsetNone = "0";
 export const baseSpaceSelectableInsetSm = "4px";
 export const baseSpaceSelectableInsetMd = "8px";
 export const baseSpaceSelectableInsetLg = "12px";
+export const baseSpaceSelectableInsetXl = "16px";
 export const baseSpaceSelectableStackNone = "0";
 export const baseSpaceSelectableStackS = "4px";
 export const baseSpaceSelectableStackMd = "8px";
