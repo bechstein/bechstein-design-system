@@ -28,21 +28,26 @@ jobs:
           git config --global user.name "${GITHUB_ACTOR_ID}" 
           git config user.email "${GITHUB_ACTOR_ID}@users.noreply.github.com"
       - run: git add .
-        working-directory: dist/web
+        working-directory: packages/web
       - run: git commit -m "[skip ci] generated styles from design tokens"
       - run: git push
 
   version-increase:
     needs: generate-styles
     runs-on: ubuntu-latest
-    if: contains(github.event.head_commit.message, '[patch]') || contains(github.event.head_commit.message, '[minor]') || contains(github.event.head_commit.message, '[major]')
+    if: |
+      contains(github.event.head_commit.message, '[patch]') || 
+      contains(github.event.head_commit.message, '[minor]') || 
+      contains(github.event.head_commit.message, '[major]') ||
+      contains(github.event.head_commit.message, '[prerelease]')
     env:
       PATCH: ${{ contains(github.event.head_commit.message, '[patch]') }}
       MINOR: ${{ contains(github.event.head_commit.message, '[minor]') }}
       MAJOR: ${{ contains(github.event.head_commit.message, '[major]') }}
+      PRERELEASE: ${{ contains(github.event.head_commit.message, '[prerelease]') }}
     defaults:
       run:
-        working-directory: dist/web
+        working-directory: packages/web
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -55,6 +60,8 @@ jobs:
         if: ${{ env.MINOR == 'true' }}
       - run: npm version major
         if: ${{ env.MAJOR == 'true' }}
+      - run: npm version prerelease
+        if: ${{ env.PRERELEASE == 'true' }}
       - run: |
           git config --global user.name "${GITHUB_ACTOR_ID}" 
           git config user.email "${GITHUB_ACTOR_ID}@users.noreply.github.com"
@@ -79,6 +86,6 @@ jobs:
           echo "//npm.pkg.github.com/:_authToken=$NODE_AUTH_TOKEN" > .npmrc
           echo '@cbechstein-digital:registry=https://npm.pkg.github.com' >> .npmrc
           echo 'always-auth=true' >> .npmrc
-        working-directory: dist/web
+        working-directory: packages/web
       - run: npm publish
-        working-directory: dist/web
+        working-directory: packages/web

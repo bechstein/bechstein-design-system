@@ -19,7 +19,7 @@ function generateStyles() {
                 platforms: {
                     ts: {
                         transformGroup: 'tokens-studio',
-                        buildPath: 'dist/web/ts/',
+                        buildPath: 'packages/web/ts/',
                         files: [
                             {
                                 destination: `${theme.name}.ts`,
@@ -43,7 +43,7 @@ function generateStyles() {
                             'ts/color/modifiers',
                             'name/cti/kebab',
                         ],
-                        buildPath: 'dist/web/themes/',
+                        buildPath: 'packages/web/themes/',
                         files: [
                             {
                                 destination: `${theme.name}.scss`,
