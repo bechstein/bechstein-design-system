@@ -7,9 +7,7 @@
       "primitives": "source",
       "semantics": "enabled",
       "themes/cb-apps": "enabled",
-      "components/buttons/default-buttons": "enabled",
-      "language/en": "disabled",
-      "language/de": "disabled"
+      "components/buttons/default-buttons": "enabled"
     }
   },
   {
@@ -19,9 +17,7 @@
     "selectedTokenSets": {
       "primitives": "source",
       "semantics": "enabled",
-      "components/buttons/default-buttons": "enabled",
-      "language/en": "disabled",
-      "language/de": "disabled"
+      "components/buttons/default-buttons": "enabled"
     }
   },
   {

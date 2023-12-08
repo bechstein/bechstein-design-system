@@ -42,6 +42,12 @@
             "type": "color"
           }
         }
+      },
+      "content": {
+        "canvas-bg": {
+          "value": "linear-gradient (180deg, {core.color.space.space-800} 0%, {core.color.base.black} 100%)",
+          "type": "color"
+        }
       }
     },
     "font-family": {
