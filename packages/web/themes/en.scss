@@ -1,6 +1,6 @@
 
 // Do not edit directly
-// Generated on Tue, 05 Dec 2023 15:43:29 GMT
+// Generated on Fri, 08 Dec 2023 15:29:46 GMT
 
 $core-color-grey-grey-50: #fafafaff;
 $core-color-grey-grey-100: #f5f6f9ff;
@@ -12,6 +12,16 @@ $core-color-grey-grey-600: #808289ff;
 $core-color-grey-grey-700: #383a3eff;
 $core-color-grey-grey-800: #222428ff;
 $core-color-grey-grey-900: #1e2023ff;
+$core-color-space-space-50: #F4F6F7;
+$core-color-space-space-100: #E3E9EA;
+$core-color-space-space-200: #C9D3D8;
+$core-color-space-space-300: #A4B5BC;
+$core-color-space-space-400: #778E99;
+$core-color-space-space-500: #5C737E;
+$core-color-space-space-600: #4F616B;
+$core-color-space-space-700: #44515A;
+$core-color-space-space-800: #3D464D;
+$core-color-space-space-900: #2F353A;
 $core-color-blue-blue-50: #eef6ffff;
 $core-color-blue-blue-100: #d9e9ffff;
 $core-color-blue-blue-200: #bcdaffff;
@@ -155,6 +165,7 @@ $base-color-selectable-secondary-bg: #06a6f1ff;
 $base-color-selectable-secondary-fg: #ffffffff;
 $base-color-selectable-clear-bg: rgba(0,0,0,0);
 $base-color-selectable-clear-fg: #3880ffff;
+$base-color-content-canvas-bg: linear-gradient (180deg, #3D464D 0%, #000000ff 100%);
 $base-font-family-interface: 'SF Pro';
 $base-line-height-interface: 1.1;
 $base-font-size-xxs: 10;

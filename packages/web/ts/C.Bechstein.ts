@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 05 Dec 2023 15:43:29 GMT
+ * Generated on Fri, 08 Dec 2023 15:29:45 GMT
  */
 
 export const coreColorGreyGrey50 = "#fafafaff";
@@ -13,6 +13,16 @@ export const coreColorGreyGrey600 = "#808289ff";
 export const coreColorGreyGrey700 = "#383a3eff";
 export const coreColorGreyGrey800 = "#222428ff";
 export const coreColorGreyGrey900 = "#1e2023ff";
+export const coreColorSpaceSpace50 = "#F4F6F7";
+export const coreColorSpaceSpace100 = "#E3E9EA";
+export const coreColorSpaceSpace200 = "#C9D3D8";
+export const coreColorSpaceSpace300 = "#A4B5BC";
+export const coreColorSpaceSpace400 = "#778E99";
+export const coreColorSpaceSpace500 = "#5C737E";
+export const coreColorSpaceSpace600 = "#4F616B";
+export const coreColorSpaceSpace700 = "#44515A";
+export const coreColorSpaceSpace800 = "#3D464D";
+export const coreColorSpaceSpace900 = "#2F353A";
 export const coreColorBlueBlue50 = "#eef6ffff";
 export const coreColorBlueBlue100 = "#d9e9ffff";
 export const coreColorBlueBlue200 = "#bcdaffff";
@@ -157,6 +167,7 @@ export const baseColorSelectableSecondaryBg = "#06a6f1ff";
 export const baseColorSelectableSecondaryFg = "#ffffffff";
 export const baseColorSelectableClearBg = "rgba(0,0,0,0)";
 export const baseColorSelectableClearFg = "#3880ffff";
+export const baseColorContentCanvasBg = "linear-gradient (180deg, #3D464D 0%, #000000ff 100%)";
 export const baseFontFamilyInterface = "'SF Pro'";
 export const baseLineHeightInterface = 1.1;
 export const baseFontSizeXxs = "10px";
