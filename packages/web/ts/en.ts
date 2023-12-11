@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 08 Dec 2023 15:29:46 GMT
+ * Generated on Mon, 11 Dec 2023 13:17:46 GMT
  */
 
 export const coreColorGreyGrey50 = "#fafafaff";
@@ -241,4 +241,3 @@ export const compButtonColorClearFgPressed = "lch(49 64.8 280)";
 export const compButtonColorClearBorderDefault = "rgba(0,0,0,0)";
 export const compButtonOpacityEnabled = 1;
 export const compButtonOpacityDisabled = 0.5;
-export const homeConnect = "Connect";
