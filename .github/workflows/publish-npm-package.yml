@@ -84,7 +84,7 @@ jobs:
       - run: git pull
       - run: |
           echo "//npm.pkg.github.com/:_authToken=$NODE_AUTH_TOKEN" > .npmrc
-          echo '@cbechstein-digital:registry=https://npm.pkg.github.com' >> .npmrc
+          echo '@cbechstein:registry=https://npm.pkg.github.com' >> .npmrc
           echo 'always-auth=true' >> .npmrc
         working-directory: packages/web
       - run: npm publish
