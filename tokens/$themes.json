@@ -27,8 +27,7 @@
     "selectedTokenSets": {
       "primitives": "source",
       "semantics": "enabled",
-      "components/buttons/default-buttons": "enabled",
-      "language/de": "enabled"
+      "components/buttons/default-buttons": "enabled"
     },
     "group": "Language"
   },
@@ -39,8 +38,7 @@
     "selectedTokenSets": {
       "primitives": "source",
       "semantics": "enabled",
-      "components/buttons/default-buttons": "enabled",
-      "language/en": "enabled"
+      "components/buttons/default-buttons": "enabled"
     },
     "group": "Language"
   }

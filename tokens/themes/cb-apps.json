@@ -8,7 +8,7 @@
             "type": "color"
           },
           "fr": {
-            "value": "{core.color.grey.grey-300}",
+            "value": "{core.color.grey.grey-400}",
             "type": "color"
           }
         }
