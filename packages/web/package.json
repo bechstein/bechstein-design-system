@@ -1,5 +1,5 @@
 {
-  "name": "@cbechstein-digital/bechstein-design-system",
+  "name": "@cbechstein/bechstein-design-system",
   "version": "0.0.7",
   "author": "C. Bechstein Digital GmbH",
   "description": "C. Bechstein Design System",
@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/cbechstein-digital/bechstein-design-system",
+    "url": "https://github.com/cbechstein/bechstein-design-system",
     "directory": "packages/web"
   }
 }
