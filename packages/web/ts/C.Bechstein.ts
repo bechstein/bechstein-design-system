@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 08 May 2024 12:35:30 GMT
+ * Generated on Wed, 08 May 2024 12:36:26 GMT
  */
 
 export const coreColorGreyGrey50 = "#fafafaff";
@@ -160,7 +160,7 @@ export const coreBoxShadow500 = "0 12px 20px -8px rgba(26, 26, 26, 0.24)";
 export const coreBoxShadow600 = "0 20px 20px -8px rgba(26, 26, 26, 0.28)";
 export const baseColorSelectablePrimaryBg = "#383a3eff";
 export const baseColorSelectablePrimaryFg = "#ffffffff";
-export const baseColorSelectablePrimaryFr = "#d7d8daff";
+export const baseColorSelectablePrimaryFr = "#9d9fa6ff";
 export const baseColorSelectableTertiaryBg = "rgba(0,0,0,0)";
 export const baseColorSelectableTertiaryFg = "#3880ffff";
 export const baseColorSelectableSecondaryBg = "#06a6f1ff";
